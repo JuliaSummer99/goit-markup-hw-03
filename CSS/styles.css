@@ -21,7 +21,17 @@ ul {
 /* точечні оформлення СТУДІЯ  */
 
 /* Навігація */
+.site-nav{
+display: flex;
+}
+
+
 .logo-nav {
+display: flex;
+}
+
+.logo-nav {
+justify-content: flex-start;
   font-family: 'Raleway';
   text-decoration: none;
   color: var(--title-text-color);
@@ -30,12 +40,31 @@ ul {
   font-weight: 700;
 }
 
+
+.item-list{
+display: flex;
+}
+
+.item-list .item {
+margin-right: 50px;
+background-color: aqua;
+}
+
+.item-list .item:last-child {
+margin-right: 0px;
+}
+
 .site-nav .web-accent {
   color: var(--accent-color);
 }
 
-.site-nav .link {
-  text-decoration: none;
+.site-nav .link, .current-link {
+display: block;
+margin-right: 50px;
+padding-top: 32px;
+padding-bottom: 32px;
+
+text-decoration: none;
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.1;
@@ -62,6 +91,25 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts-list {
+display: flex;
+}
+
+.contacts-list {
+justify-items: flex-end;
+margin-right: 50px;
+}
+/* .contacts-list .step:last-child{
+margin-right: 0px;
+} */
+
+.contacts-list .mail-accent, .tel-number {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+margin-right: 50px;
+background-color: aqua;
+}
 
 .mail-accent {
   text-decoration: none;
@@ -84,12 +132,18 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   font-weight: 500;
+  margin-right: 0px;
 }
 
 .tel-number:hover,
 .tel-number:focus {
   color: var(--accent-color)
 }
+
+/* .container {
+margin-left: auto;
+margin-right: auto;
+} */
 
 /* Шапка */
 .hero {
