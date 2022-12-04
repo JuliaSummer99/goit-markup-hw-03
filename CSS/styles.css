@@ -18,20 +18,41 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
 /* точечні оформлення СТУДІЯ  */
 
 /* Навігація */
+
+.cotainer.header{
+margin-left: auto;
+margin-right: auto;
+width: 1170px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
 .site-nav{
 display: flex;
+align-items: center;
 }
 
 
 .logo-nav {
-display: flex;
+display: block;
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: 93px;
 }
 
-.logo-nav {
-justify-content: flex-start;
+.site-nav .logo-nav {
   font-family: 'Raleway';
   text-decoration: none;
   color: var(--title-text-color);
@@ -53,6 +74,7 @@ background-color: aqua;
 .item-list .item:last-child {
 margin-right: 0px;
 }
+
 
 .site-nav .web-accent {
   color: var(--accent-color);
@@ -91,17 +113,10 @@ text-decoration: none;
   color: var(--accent-color);
 }
 
+
 .contacts-list {
 display: flex;
 }
-
-.contacts-list {
-justify-items: flex-end;
-margin-right: 50px;
-}
-/* .contacts-list .step:last-child{
-margin-right: 0px;
-} */
 
 .contacts-list .mail-accent, .tel-number {
 display: block;
@@ -268,6 +283,7 @@ footer {
 }
 
 .number {
+margin-right: 0px;
   font-style: normal;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
