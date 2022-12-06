@@ -49,12 +49,20 @@ p {
 
 /* Навігація */
 
-.cotainer.header{
+.container {
+width: 1200px;
+padding: 0 15px;
 margin-left: auto;
 margin-right: auto;
-width: 1170px;
-padding-left: 15px;
-padding-right: 15px;
+}
+
+.header-container{
+display: flex;
+align-items: center;
+}
+
+.page-header {
+border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav{
@@ -86,7 +94,6 @@ display: flex;
 
 .item-list .item {
 margin-right: 50px;
-background-color: aqua;
 }
 
 .item-list .item:last-child {
@@ -142,7 +149,6 @@ display: block;
 padding-top: 32px;
 padding-bottom: 32px;
 margin-right: 50px;
-background-color: aqua;
 }
 
 .mail-accent {
@@ -174,18 +180,28 @@ background-color: aqua;
   color: var(--accent-color)
 }
 
-/* .container {
-margin-left: auto;
-margin-right: auto;
-} */
+
 
 /* Шапка */
 .hero {
+width: 1600px;
+padding-top: 200px;
+padding-bottom: 200px;
+margin-left: auto;
+margin-right: auto;
+
+text-align: center;
   background-color: #2F303A;
   color: var(--primary-white-color);
 }
 
 .hero-title {
+max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
@@ -196,6 +212,12 @@ margin-right: auto;
 }
 
 .hero-button {
+  width: 216px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+
   font-family: 'Roboto';
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -220,7 +242,29 @@ margin-right: auto;
 
 /* <!--Особливості--> */
 
-.feature-list .title {
+.section-list {
+display: flex;
+   padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.feature-list {
+display: flex;
+}
+
+.feature-list .features-text {
+margin-right: 30px;
+}
+
+.features-text:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
+.section-list .title {
+margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -235,6 +279,27 @@ margin-right: auto;
   line-height: 1.2;
   text-align: center;
 }
+
+
+/* Чим ми займаємось */
+
+.section-work{
+padding-top: 0px;
+}
+
+.work-list {
+display: flex;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
 
 .our-team {
   background-color: #F5F4FA;
