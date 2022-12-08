@@ -367,6 +367,7 @@ display: block;
   background-color: #2F303A;
 }
 
+
 .logo-foot {
   display: block;
   font-family: 'Raleway';
@@ -377,6 +378,7 @@ display: block;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
 
 .logo-foot .web-accent {
   color: var(--accent-color);
@@ -392,6 +394,8 @@ display: block;
 }
 
 .place {
+display: block;
+
   font-style: normal;
   text-decoration: none;
   font-family: 'Roboto';
@@ -429,16 +433,37 @@ display: block;
   color: var(--accent-color);
 }
 
-/* Точечні оформлення Портфоліо */
+/*  Портфоліо */
+
+.portfolio-section {
+padding-top: 94px;
+ padding-bottom: 94px;
+}
+
+.button-list{
+display: flex;
+ justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+margin-right: 8px;
+}
 
 
-.pagination .filtr-butt {
+.button-list .filtr-butt {
+  display: inline-block;
+  min-width: 73px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+
   cursor: pointer;
-  border: none;
   font-family: 'Roboto';
   font-style: normal;
   color: var(--title-text-color);
   background-color: #F5F4FA;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -446,24 +471,49 @@ display: block;
   border-radius: 4px;
 }
 
-.pagination .filtr-butt:hover,
-.pagination .filtr-butt:focus {
+.button-list .filtr-butt:hover,
+.button-list .filtr-butt:focus {
   background-color: var(--accent-color);
 }
 
-.portfolio .title {
+.portfolio {
+display: flex;
+flex-wrap: wrap;
+}
+
+.portfolio-img {
+flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-img:not(:nth-child(3n)) {
+margin-right: 30px;
+}
+
+.portfolio-img:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+}
+
+.portfolio-description{
+ border: 1px solid white;
+  border-top: transparent;
+  padding: 20px 24px 24px 20px;
+  text-align: left;
+}
+
+.portfolio-title {
+margin-bottom: 4px;
+}
+
+
+.portfolio .portfolio-title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 
 .portfolio .description {
-  font-weight: 400;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
