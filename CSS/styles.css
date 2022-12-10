@@ -29,8 +29,10 @@ h3,
 h4,
 h5,
 h6,
-p {
-  margin-top: 0;
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -93,9 +95,9 @@ p {
   display: flex;
 }
 
-.item-list .item {
+/* .item-list .item {
   margin-right: 50px;
-}
+} */
 
 .item-list .item:last-child {
   margin-right: 0px;
@@ -110,8 +112,8 @@ p {
 .current-link {
   display: block;
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 
   text-decoration: none;
   color: var(--title-text-color);
@@ -149,8 +151,6 @@ p {
 .contacts-list .mail-accent,
 .tel-number {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-right: 50px;
 }
 
@@ -187,7 +187,6 @@ p {
 
 /* Шапка */
 .hero {
-  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -256,8 +255,12 @@ p {
   display: flex;
 }
 
-.feature-list .features-text {
+.features-text {
   margin-right: 30px;
+
+font-size: 14px;
+  line-height: 1.71;
+color: var(--primary-text-color);
 }
 
 .features-text:not(:last-child) {
@@ -276,12 +279,6 @@ p {
   text-transform: uppercase;
 }
 
-.section-title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
 
 
 /* Чим ми займаємось */
@@ -290,6 +287,14 @@ p {
   padding-top: 0px;
   padding-bottom: 94px;
 }
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
 
 .work-list {
   display: flex;
@@ -313,7 +318,6 @@ p {
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #F5F4FA;
@@ -338,7 +342,6 @@ p {
 }
 
 .team-workers {
-  height: 108px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--primary-white-color);
@@ -361,7 +364,6 @@ p {
 display: block;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
@@ -392,6 +394,12 @@ display: block;
 .contacts-box {
 display: block;
 }
+
+.footer-contact-item,
+.footer-contact-item {
+  margin-top: 9px;
+}
+
 
 .place {
 display: block;
@@ -493,8 +501,8 @@ margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.portfolio-description{
- border: 1px solid white;
+.portfolio-description {
+ border:  1px solid #EEEEEE;
   border-top: transparent;
   padding: 20px 24px 24px 20px;
   text-align: left;
