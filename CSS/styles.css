@@ -48,7 +48,6 @@ ul {
   margin: -1px;
 }
 
-/* точечні оформлення СТУДІЯ  */
 
 /* Навігація */
 
@@ -58,6 +57,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+.section {
+ padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 
 .header-container {
   display: flex;
@@ -246,8 +251,7 @@ ul {
 
 .section-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 
 }
 
@@ -316,8 +320,6 @@ color: var(--primary-text-color);
 }
 
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   background-color: #F5F4FA;
@@ -443,10 +445,7 @@ display: block;
 
 /*  Портфоліо */
 
-.portfolio-section {
-padding-top: 94px;
- padding-bottom: 94px;
-}
+
 
 .button-list{
 display: flex;
